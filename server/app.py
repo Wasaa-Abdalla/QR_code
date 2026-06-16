@@ -1,9 +1,10 @@
 import os
 from flask import Flask, send_from_directory
 
+# Point Flask to your React build folder
 app = Flask(__name__, static_folder="../qr-validator/dist", static_url_path="")
 
-# Catch-all route: serves index.html for any path
+# Catch-all route: serve index.html for any path
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def serve(path):
