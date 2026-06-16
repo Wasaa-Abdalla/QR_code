@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/validate/8DEB11A545EE76E"
+          path="/validate"
           element={<ValidationPage />}
         />
         <Route path="/" element={<QrGenerator />} />
