@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 
 function ValidationPage() {
-  const { code } = useParams();
+  //const { code } = useParams();
 
   const permit = {
-    code,
+    code : "8DEB11A545EE76E",
     description:
       "BUSINESS PERMIT BILL FOR YEAR- 2026, OWNER :",
     documentDate: new Date().toLocaleString(),
